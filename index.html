@@ -13,7 +13,9 @@
       --color-text: #9c9c9c;
       --color-shadow: -4px -2px 4px 0px #ffffff,
         4px 2px 6px 0px #dfe4ea;
+
     }
+
 
     html[data-theme='dark'] {
 
@@ -24,11 +26,11 @@
     }
 
     body {
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       background: var(--bg);
       color: var(--color-text);
       width: 100%;
       height: 100vh;
+
     }
 
     .card {
@@ -52,7 +54,7 @@
     #welcome {
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       font-size: 35px;
-      line-height: 20px;
+      line-height: 400%;
     }
 
     #Descricao {
@@ -62,7 +64,6 @@
 
     #foto {
       border-radius: 15%;
-
     }
 
     #habilidade {
@@ -92,7 +93,7 @@
     #trybe {
       background-color: #11a36a;
       color: white;
-      padding: 02px;
+      padding: 0.09px;
       text-decoration: none;
       border-radius: 5px;
     }
@@ -113,6 +114,15 @@
     #html {
       font-size: 18px;
     }
+
+    #localizacao {
+      font-size: 18px;
+      line-height: 1%;
+    }
+
+    .idade {
+      line-height: 02%;
+    }
   </style>
 </head>
 
@@ -124,6 +134,7 @@
   <br>
   <br>
   <input type="checkbox" name="theme">
+  <strong>Darkmod</strong>
   <script>
     let checkbox = document.querySelector('input[name=theme]');
     checkbox.addEventListener('change', function () {
@@ -138,10 +149,10 @@
   <br>
   <img src="imagens/1644978373183.jpeg" alt="Foto de gabriel" width="150px" id="foto">
   <h3 id="nome"><em>Me Chamo: Gabriel Thiago Corrêa da Silva</em></h3>
-  <p class="text"><strong>Tenho 25 anos</strong></p>
-  <p> <a
+  <p class="text idade"><strong>Tenho 25 anos</strong></p>
+  <p id="localizacao"> <a
       href="https://www.google.com.br/maps/place/R.+Ot%C3%A1vio+Teixeira,+320+-+Cabu%C3%A7u,+Nova+Igua%C3%A7u+-+RJ,+26291-371/@-22.7860811,-43.5479128,17z/data=!3m1!4b1!4m5!3m4!1s0x995ec14ff8956d:0xa749274763327065!8m2!3d-22.7860861!4d-43.5457241"
-      target="_blank">Sou de Nova Iguaçu, Rio de Janeiro</a></p>
+      target="_blank"><strong>Sou de Nova Iguaçu, Rio de Janeiro</strong></a></p>
   <p id="Descricao"><strong><em>Sou determinado, aprendo as coisas bem rápido, sou muito extrovertido,<br>
         gosto de trabalhar em equipe, sou criativo, gosto de desafios,
         <br> estou cursando Desenvolvimento Web na <a id="trybe" href="https://www.betrybe.com/"
