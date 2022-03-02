@@ -6,129 +6,28 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meu Portfólio</title>
-  <style>
-    html [data-theme='light'] {
-      --bg: #f5f6f7;
-      --color-text: #9c9c9c;
-      --color-shadow: -4px -2px 4px 0px #ffffff,
-        4px 2px 6px 0px #dfe4ea;
-
-    }
-
-
-    html[data-theme='dark'] {
-      --bg: #131419;
-      --color-text: #fff;
-      --color-shadow: -3px -3px 10px rgb(255, 255, 255, 0.05),
-        3px 3px 15px rgb(0, 0, 0, 0.5);
-    }
-
-    body {
-      background: var(--bg);
-      color: var(--color-text);
-      width: 100%;
-      height: 100vh;
-
-    }
-
-    .card {
-      width: 100%;
-      height: 100vh;
-      background: var(--bg);
-      color: var(--color-text);
-      box-shadow: var(--color-shadow);
-    }
-
-    #rodapé {
-      text-align: center;
-    }
-
-    #nome {
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      font-size: 25px;
-      
-    }
-
-    #welcome {
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      font-size: 35px;
-      line-height: 400%;
-    }
-
-    #Descricao {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      font-size: 20px;
-    }
-
-    #foto {
-      border-radius: 15%;
-    }
-
-    #habilidade {
-      background-color: darkblue;
-      color: white;
-      padding: 10px;
-      text-decoration: none;
-      border-radius: 25px;
-    }
-
-    #referencia {
-      background-color: darkblue;
-      color: white;
-      padding: 10px;
-      text-decoration: none;
-      border-radius: 25px;
-    }
-
-    #contato {
-      background-color: darkblue;
-      color: white;
-      padding: 10px;
-      text-decoration: none;
-      border-radius: 25px;
-    }
-
-    #trybe {
-      background-color: #11a36a;
-      color: white;
-      padding: 0.75px;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-
-    .text {
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      font-size: 18px;
-    }
-
-    #fun {
-      font-size: 18px;
-    }
-
-    #git {
-      font-size: 18px;
-    }
-
-    #html {
-      font-size: 18px;
-    }
-
-    #localizacao {
-      font-size: 18px;
-      
-    }    
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <h1 id="welcome">Olá, Bem vindo ao Meu Portfólio </h1>
-  <a id="habilidade" href="#hab">Habilidades em Desenvolvimento</a>
-  <a id="referencia" href="#ref">Referências</a>
-  <a id="contato" href="#cont">Contatos</a>
-  <br>
-  <br>
-  <input type="checkbox" name="theme">
-  <strong>DarkMod / LightMod</strong>
+  <div>
+    <a id="habilidade" href="#hab">Habilidades em Desenvolvimento</a>
+    <a id="referencia" href="#ref">Referências</a>
+    <a id="contato" href="#cont">Contatos</a>
+    <h1>Olá, Bem vindo ao Meu Portfólio </h1>
+    <div class="image-container">
+      <img src="imagens/1644978373183.jpeg" alt="Foto de gabriel" width="150px" id="foto">
+      <h3 class="info"><em>Gabriel Thiago Corrêa da Silva</em></h3>
+      <p class="info"><strong>Tenho 25 anos</strong></p>
+    </div>
+  </div>
+  <div class="Darkmod">
+    <input type="checkbox" name="theme">
+    <strong>DarkMod / LightMod</strong>
+  </div>
   <script>
     let checkbox = document.querySelector('input[name=theme]');
     checkbox.addEventListener('change', function () {
@@ -139,31 +38,34 @@
       }
     });
   </script>
-  <br>
-  <br>
-  <img src="imagens/1644978373183.jpeg" alt="Foto de gabriel" width="150px" id="foto">
-  <h3 id="nome"><em>Me Chamo: Gabriel Thiago Corrêa da Silva</em></h3>
-  <p class="text idade"><strong>Tenho 25 anos</strong></p>
-  <p id="localizacao"><a
-      href="https://www.google.com.br/maps/place/R.+Ot%C3%A1vio+Teixeira,+320+-+Cabu%C3%A7u,+Nova+Igua%C3%A7u+-+RJ,+26291-371/@-22.7860811,-43.5479128,17z/data=!3m1!4b1!4m5!3m4!1s0x995ec14ff8956d:0xa749274763327065!8m2!3d-22.7860861!4d-43.5457241"
-      target="_blank"><strong>Sou de Nova Iguaçu, Rio de Janeiro</strong></a></p>
-  <p id="Descricao"><strong><em>Sou determinado, aprendo as coisas bem rápido, sou muito extrovertido,<br>
-        gosto de trabalhar em equipe, sou criativo, gosto de desafios,
-        <br> estou cursando Desenvolvimento Web na <a id="trybe" href="https://www.betrybe.com/"
-          target="_self">Trybe</a></em></p></strong>
-
-  <p class="text" id="hab"></p><strong>Algumas habilidades que possuo que estão em Desenvolvimento:</strong></p>
-  <ul>
-    <li id="fun"><em><strong>Fundamentos</em></strong></li>
-    <li id="git"><em><strong>Git&GitHub</em></strong></li>
-    <li id="html"><em><strong>HTML e CSS</em></strong></li>
-  </ul>
-  <h3 class="text" id="ref">O Blog que recomendo para que quer ficar sempre dentro, <br> das noticias do mundo de <a
-      href="https://blog.betrybe.com/" target="_blank">Desenvolvimento.</a></h3>
-  <h2 class="text" id="cont"><strong><em>Minhas redes sociais</em></strong></h2>
+  <div>
+    <p><a
+        href="https://www.google.com.br/maps/place/R.+Ot%C3%A1vio+Teixeira,+320+-+Cabu%C3%A7u,+Nova+Igua%C3%A7u+-+RJ,+26291-371/@-22.7860811,-43.5479128,17z/data=!3m1!4b1!4m5!3m4!1s0x995ec14ff8956d:0xa749274763327065!8m2!3d-22.7860861!4d-43.5457241"
+        target="_blank"><strong>Sou de Nova Iguaçu, Rio de Janeiro</strong></a></p>
+    <p id="descricao"><strong><em>Sou determinado, aprendo as coisas bem rápido, sou muito extrovertido,<br>
+          gosto de trabalhar em equipe, sou criativo, gosto de desafios,
+          <br> estou cursando Desenvolvimento Web na <a id="trybe" href="https://www.betrybe.com/"
+            target="_self">Trybe.</a></em></p></strong>
+    <p id="hab"><strong>Algumas habilidades que possuo que estão em Desenvolvimento:</strong></p>
+  </div>
+  <div>
+    <ul>
+      <li><em><strong>Fundamentos Web</em></strong></li>
+      <li><em><strong>Git&GitHub</em></strong></li>
+      <li><em><strong>HTML e CSS</em></strong></li>
+      <li><em><strong>JavaScript</strong></em></li>
+      <li><em><strong>SQL</strong></em></li>
+    </ul>
+  </div>
+  <div>
+    <h3 id="ref">O Blog que recomendo para que quer ficar sempre dentro,<br> das noticias do mundo de <a
+        href="https://blog.betrybe.com/" target="_blank">Desenvolvimento.</a></h3>
+    <h2 id="cont"><strong><em>Minhas redes sociais</em></strong></h2>
+  </div>
   <ul>
     <li> <a href="https://www.linkedin.com/in/gthiago/" target="_blank"> <img
-          src="https://logospng.org/download/linkedin/logo-linkedin-icon-256.png" alt="Linkedin" width="35px"></a></li>
+          src="https://logospng.org/download/linkedin/logo-linkedin-icon-256.png" alt="Linkedin" width="35px"></a>
+    </li>
     <li> <a href="https://github.com/oGabrielDev" target="_blank"> <img
           src="https://github.githubassets.com/images/modules/logos_page/Octocat.png" alt="github.com/oGabrielDev"
           width="35px"></a></li>
@@ -173,6 +75,5 @@
   </ul>
   <h4 id="rodapé"><em><strong>Site em Desenvolvimento, Atualizações Constantes para adição de novos conteudos e
         designer. </em></strong></h4>
-</body>
-
+  </body>
 </html>
